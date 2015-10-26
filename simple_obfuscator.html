@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+var sites = ['http://www.theguardian.com','http://news.bbc.co.uk'];
+
+function loadPages(){
+	document.getElementById('example').src = sites[Math.floor((Math.random() * sites.length))];
+}
+
+for(var i=0;i<10;i++) {
+	setInterval(loadPages,30000);
+}
+</script>
+</head>
+<body>
+<iframe id="example"/>
+</body>
+</html>
